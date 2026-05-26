@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import { useState, useEffect } from "react";
-import { TOOLS } from "../lib/pricingData.js";
+import { TOOLS } from "@/lib/tools";
 
 const DEFAULT_ENTRY = { tool: "cursor", plan: "pro", seats: 1, monthlySpend: "" };
 
@@ -80,7 +80,7 @@ export default function AuditForm({ onSubmit }) {
             min="1"
             value={teamSize}
             onChange={(e) => setTeamSize(e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           />
         </div>
         <div>
@@ -90,7 +90,7 @@ export default function AuditForm({ onSubmit }) {
           <select
             value={useCase}
             onChange={(e) => setUseCase(e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           >
             {USE_CASES.map((uc) => (
               <option key={uc.value} value={uc.value}>{uc.label}</option>
@@ -162,7 +162,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
           <select
             value={entry.tool}
             onChange={(e) => onChange(index, "tool", e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           >
             {toolKeys.map((key) => (
               <option key={key} value={key}>{TOOLS[key].name}</option>
@@ -176,7 +176,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
           <select
             value={entry.plan}
             onChange={(e) => onChange(index, "plan", e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           >
             {planKeys.map((key) => (
               <option key={key} value={key}>
@@ -194,7 +194,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
             min="1"
             value={entry.seats}
             onChange={(e) => onChange(index, "seats", e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           />
         </div>
 
@@ -207,7 +207,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
             placeholder="e.g. 40"
             value={entry.monthlySpend}
             onChange={(e) => onChange(index, "monthlySpend", e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
           />
         </div>
       </div>

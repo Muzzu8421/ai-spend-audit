@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 import { nanoid } from "nanoid";
-import "../../../lib/mongodb.js";
+import connectDB from "../../../lib/mongodb.js";
 import Audit from "../../../models/Audit.js";
 import { runAudit } from "../../../lib/auditEngine.js";
 
 export async function POST(req) {
   try {
+    await connectDB();
     const { entries, teamSize, useCase } = await req.json();
 
     // Run audit engine

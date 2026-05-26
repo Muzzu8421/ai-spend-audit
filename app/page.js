@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import AuditForm from "../components/AuditForm.jsx";
-import AuditResults from "../components/AuditResults.jsx";
+import AuditForm from "@/components/AuditForm";
+import AuditResults from "@/components/AuditResults";
 
 export default function Home() {
   const [audit, setAudit] = useState(null);

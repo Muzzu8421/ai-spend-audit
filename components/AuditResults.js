@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import LeadCapture from "./LeadCapture.jsx";
-import { TOOLS } from "../lib/pricingData.js";
+import LeadCapture from "./LeadCapture.js";
+import { TOOLS } from "@/lib/tools.js";
 
 export default function AuditResults({ audit, auditId }) {
   const [showLead, setShowLead] = useState(false);

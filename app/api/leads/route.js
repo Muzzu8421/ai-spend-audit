@@ -44,7 +44,7 @@ export async function POST(req) {
     const isHighSavings = savings > 500;
 
     await resend.emails.send({
-      from: "SpendScan <hello@yourdomain.com>",
+      from: "SpendScan <onboarding@resend.dev>",
       to: email,
       subject: "Your AI Spend Audit Report",
       html: `
