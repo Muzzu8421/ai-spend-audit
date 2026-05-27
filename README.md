@@ -1,4 +1,4 @@
-# AI Spend Audit
+# SpendScan
 
 > Find out if your team is overpaying for AI tools — free, instant, no login required.
 
@@ -11,7 +11,7 @@
 
 ## What I Built
 
-AI Spend Audit is a free web app that helps startup founders and engineering managers find out if they're overpaying for AI tools like Cursor, ChatGPT, Claude, GitHub Copilot, and more. You input your tools, plans, and seat counts — and get an instant audit showing exactly where you're overspending, what to switch to, and your total potential monthly and annual savings. It's built as a lead-generation asset for [Credex](https://credex.rocks), a marketplace for discounted AI infrastructure credits, surfacing real overspend and offering Credex as the solution for high-savings cases.
+SpendScan is a free web app that helps startup founders and engineering managers find out if they're overpaying for AI tools like Cursor, ChatGPT, Claude, GitHub Copilot, and more. You input your tools, plans, and seat counts — and get an instant audit showing exactly where you're overspending, what to switch to, and your total potential monthly and annual savings. It's built as a lead-generation asset for [Credex](https://credex.rocks), a marketplace for discounted AI infrastructure credits, surfacing real overspend and offering Credex as the solution for high-savings cases.
 
 ---
 
