@@ -188,7 +188,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
 
         {/* Seats */}
         <div>
-          <label className="block text-xs text-gray-500 mb-1">Seats / Users</label>
+          <label className="block text-xs text-gray-900 mb-1">Seats / Users</label>
           <input
             type="number"
             min="1"
@@ -200,7 +200,7 @@ function ToolRow({ entry, index, onChange, onRemove, canRemove }) {
 
         {/* Spend */}
         <div>
-          <label className="block text-xs text-gray-500 mb-1">Monthly Spend ($)</label>
+          <label className="block text-xs text-gray-900 mb-1">Monthly Spend ($)</label>
           <input
             type="number"
             min="0"
