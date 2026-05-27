@@ -127,7 +127,7 @@ export default function AuditResults({ audit, auditId }) {
 
       {leadDone && (
         <div className="text-center text-green-600 font-medium py-2">
-          ✅ Report sent! Check your inbox.
+          Report sent! Check your inbox.
         </div>
       )}
 

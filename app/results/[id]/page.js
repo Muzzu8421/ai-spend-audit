@@ -131,7 +131,7 @@ export default async function ResultsPage({ params }) {
             >
               <div className="flex justify-between items-start">
                 <div>
-                  <div className="font-medium">
+                  <div className="font-medium text-gray-900">
                     {TOOLS[result.tool]?.name || result.tool}
                   </div>
                   <div className="text-xs text-gray-400 capitalize">
